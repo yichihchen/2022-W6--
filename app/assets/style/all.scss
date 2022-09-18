@@ -3,4 +3,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+
+@import "_base.scss";
+@import "_mixin.scss";
+@import "_utilities.scss";
+@import "_layout.scss";
+@import "../style/Pages/index";
