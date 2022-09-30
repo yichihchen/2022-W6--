@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
 </head>
 
 <body>
@@ -19,7 +21,10 @@
     <div class="container-lg">
       <!--container-lg可以這樣下嗎?-->
       <div class="header-menu d-flex justify-content-between">
-        <h1 class="logo py-4">
+        <h1 class="logo py-4 d-none d-md-block">
+          <a href="#">CSS-toturial</a>
+        </h1>
+        <h1 class="logo-mobile py-4 d-block d-md-none">
           <a href="#">CSS-toturial</a>
         </h1>
         <ul class="list-unstyled d-md-flex lh-1 align-items-center my-0 d-none d-md-block">
@@ -33,7 +38,8 @@
           </span>
         </div>
 
-      </div><!--header-menu-->
+      </div>
+      <!--header-menu-->
     </div>
   </div>
 
@@ -41,8 +47,8 @@
 
     <footer class="footer text-white text-center">
       <div class="container">
-      Coding Home © 2022 All Rights Reserved
-    </div>
+        Coding Home © 2022 All Rights Reserved
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

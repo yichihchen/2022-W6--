@@ -1,28 +1,46 @@
-.logo a{
+.logo a {
   background: url(../images/logo.svg)no-repeat center;
   display: block;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
 }
-.header{
-  border-bottom: 2px solid transparent;//漸層
-  border-image:linear-gradient(90deg, $primary 50%, $secondary 50%);
+.logo-mobile a {
+  background: url(../images/logo-mobile.svg)no-repeat center;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 24px;
+  height: 24px;
+}
+
+.header {
+  border-bottom: 2px solid transparent; //漸層
+  border-image: linear-gradient(90deg, $primary 50%, $secondary 50%);
   border-image-slice: 1;
   width: 100%;
   background: $gray-800;
 }
-.header-menu{
+
+.header-menu {
   font-size: 18px;
-  img{
+
+  img {
     width: 20px;
     height: 20px;
     margin-right: 6px;
   }
-  .material-symbols-outlined{
-    color:$primary;
+
+  .material-symbols-outlined {
+    color: $primary;
   }
 }
-.footer{
+
+.footer {
   background: #1A1A1A;
+  font-size: 12px; //手機
+  @include pad(){
+    font-size: 16px; //平板以上
+  }
 }
