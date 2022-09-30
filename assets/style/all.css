@@ -12282,6 +12282,14 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
@@ -12293,10 +12301,6 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
@@ -12311,6 +12315,16 @@ a {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.logo-mobile a {
+  background: url(../images/logo-mobile.svg) no-repeat center;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 24px;
+  height: 24px;
 }
 
 .header {
@@ -12339,6 +12353,261 @@ a {
 
 .footer {
   background: #1A1A1A;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 16px;
+  }
+}
+
+.index-banner {
+  height: 680px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #1C1C1C;
+  background-image: url(/assets/images/bg_home.jpg);
+}
+
+.index-banner h2, .index-banner .h2 {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .index-banner h2, .index-banner .h2 {
+    font-size: 48px;
+  }
+}
+
+.index-banner h3, .index-banner .h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .index-banner h3, .index-banner .h3 {
+    font-size: 48px;
+  }
+}
+
+.index-banner p {
+  font-size: 18px;
+}
+
+.index-banner .banner {
+  border: 1px solid white;
+  padding: 48px 5px;
+  position: relative;
+}
+
+.index-banner .square-lefttop {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.index-banner .square-leftbottom {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.index-banner .square-righttop {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.index-banner .square-rightbottom {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.hand {
+  background-color: #2D2D2D;
+  padding: 80px 0px;
+}
+
+.hand .grid {
+  width: 100%;
+  height: 264px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hand h4, .hand .h4 {
+  font-size: 28px;
+}
+
+.hand .rocket {
+  width: 40px;
+  height: 40px;
+}
+
+.hand .pin {
+  width: 40px;
+  height: 40px;
+}
+
+.hand .hand-course-outside,
+.hand .hand-rocket-outside,
+.hand .hand-pin-outside {
+  padding: 1px;
+  border-radius: 12px;
+}
+
+.hand .hand-course-outside:hover,
+.hand .hand-rocket-outside:hover,
+.hand .hand-pin-outside:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(#62DB54, #09ACF5);
+  background-image: linear-gradient(#62DB54, #09ACF5);
+}
+
+.hand .course-wrap {
+  background-color: #2D2D2D;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hand .hand-course {
+  background-color: #2D2D2D;
+  border-radius: 12px;
+}
+
+.hand .hand-course .card-icon {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.hand .hand-course .card-icon:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.hand .hand-course .card-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hand .hand-course .left-right-arrow {
+  width: 41px;
+  height: 25px;
+}
+
+.hand .rocket-wrap {
+  background-color: #2D2D2D;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hand .hand-rocket {
+  background-color: #2D2D2D;
+  border-radius: 12px;
+}
+
+.hand .hand-rocket .card-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hand .hand-rocket .card-icon {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.hand .hand-rocket .card-icon:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.hand .pin-wrap {
+  background-color: #2D2D2D;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hand .hand-pin {
+  background-color: #2D2D2D;
+  border-radius: 12px;
+}
+
+.hand .hand-pin .card-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hand .hand-pin .card-icon {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.hand .hand-pin .card-icon:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 /*# sourceMappingURL=all.css.map */

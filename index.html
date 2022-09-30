@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
 </head>
 
 <body>
@@ -19,7 +21,10 @@
     <div class="container-lg">
       <!--container-lg可以這樣下嗎?-->
       <div class="header-menu d-flex justify-content-between">
-        <h1 class="logo py-4">
+        <h1 class="logo py-4 d-none d-md-block">
+          <a href="#">CSS-toturial</a>
+        </h1>
+        <h1 class="logo-mobile py-4 d-block d-md-none">
           <a href="#">CSS-toturial</a>
         </h1>
         <ul class="list-unstyled d-md-flex lh-1 align-items-center my-0 d-none d-md-block">
@@ -33,18 +38,90 @@
           </span>
         </div>
 
-      </div><!--header-menu-->
+      </div>
+      <!--header-menu-->
     </div>
   </div>
 
   
 
+<div class="index-banner d-flex align-items-center">
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class=" col-xl-6 col-md-10">
+                <div class="banner text-center ">
+                    <div class="square-lefttop"></div>
+                    <div class="square-leftbottom"></div>
+                    <div class="square-righttop"></div>
+                    <div class="square-rightbottom"></div>
+                    <!--banner  -->
+                    <h2 class="fw-bold my-0">全台最豐富的程式家教</h2>
+                    <h3 class="text-white fw-bold my-0">在實踐中化理想為現實</h3>
+                    <p class="text-white mt-4 mb-0">全台最專業師資｜到府程式家教｜客製化課程</p>
+                </div>
+                <!-- banner -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+</div>
 
+<section class="hand">
+    <div class="container">
+        <div class="grid">
+
+            <div class="hand-teach d-flex align-items-center">
+                <h4 class="text-white fw-bold">手把手帶你<br>親自到家教到會</h4>
+            </div>
+
+            <div class="hand-course-outside position-relative">
+                <div class="course-wrap d-flex justify-content-center align-items-center text-center">
+
+                    <div class="hand-course">
+                        <span class="card-icon material-symbols-outlined">
+                            code
+                        </span>
+                        <h5 class="text-white">超過 100 種專業課程</h5>
+                        <p class="text-white">學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hand-rocket-outside position-relative">
+                <div class="rocket-wrap d-flex justify-content-center align-items-center text-center ">
+                    <!-- 多加一層div，用flex置中 -->
+                    <div class="hand-rocket">
+                        <span class="card-icon material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
+                            rocket_launch
+                        </span>
+                        <h5 class="text-white">高效學習</h5>
+                        <p class="text-white">客製化專屬課表<br>讓學習變簡單</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hand-pin-outside position-relative">
+                <div class="pin-wrap d-flex justify-content-center align-items-center text-center">
+                    <div class="hand-pin">
+                        <span class="card-icon material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
+                            pin_drop
+                        </span>
+                        <h5 class="text-white">指定地點</h5>
+                        <p class="text-white">專業老師到你指定的地點<br> 一對一高效學習</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <footer class="footer text-white text-center">
       <div class="container">
-      Coding Home © 2022 All Rights Reserved
-    </div>
+        Coding Home © 2022 All Rights Reserved
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
